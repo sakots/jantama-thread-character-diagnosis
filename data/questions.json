@@ -1,0 +1,376 @@
+{
+  "status": "design-proposal",
+  "note": "These are prototype questions authored for the app, not statistically extracted from the archive.",
+  "dimensions": [
+    "chat",
+    "mahjong",
+    "character",
+    "social",
+    "humor",
+    "calm"
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "text": "スレを開いて真っ先に見るのは？",
+      "answers": [
+        {
+          "id": "a",
+          "text": "今日の雑談や飯の話",
+          "weights": {
+            "chat": 2,
+            "calm": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "何切るや対局の話",
+          "weights": {
+            "mahjong": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "キャラ画像やキャラネタ",
+          "weights": {
+            "character": 2
+          }
+        },
+        {
+          "id": "d",
+          "text": "友人戦の募集",
+          "weights": {
+            "social": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "text": "休日の理想に近いのは？",
+      "answers": [
+        {
+          "id": "a",
+          "text": "のんびり雑談する",
+          "weights": {
+            "calm": 2,
+            "chat": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "集中して対局する",
+          "weights": {
+            "mahjong": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "推しの話で盛り上がる",
+          "weights": {
+            "character": 2,
+            "social": 1
+          }
+        },
+        {
+          "id": "d",
+          "text": "みんなでわちゃわちゃ遊ぶ",
+          "weights": {
+            "social": 2,
+            "humor": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "text": "スレで話が脱線したら？",
+      "answers": [
+        {
+          "id": "a",
+          "text": "むしろ雑談が本番",
+          "weights": {
+            "chat": 2,
+            "humor": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "麻雀の話へ戻したい",
+          "weights": {
+            "mahjong": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "推しの話を始める",
+          "weights": {
+            "character": 2
+          }
+        },
+        {
+          "id": "d",
+          "text": "面白そうなら何でも参加",
+          "weights": {
+            "social": 1,
+            "humor": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "text": "一番うれしい反応は？",
+      "answers": [
+        {
+          "id": "a",
+          "text": "雑談に誰かが乗ってくれる",
+          "weights": {
+            "chat": 2,
+            "social": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "打ち筋を褒められる",
+          "weights": {
+            "mahjong": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "推しへの共感が集まる",
+          "weights": {
+            "character": 2
+          }
+        },
+        {
+          "id": "d",
+          "text": "ネタがウケる",
+          "weights": {
+            "humor": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "text": "友人戦に誘われたら？",
+      "answers": [
+        {
+          "id": "a",
+          "text": "観戦しながら雑談したい",
+          "weights": {
+            "chat": 1,
+            "social": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "真剣勝負したい",
+          "weights": {
+            "mahjong": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "推しキャラで参加したい",
+          "weights": {
+            "character": 2,
+            "social": 1
+          }
+        },
+        {
+          "id": "d",
+          "text": "わいわい参加したい",
+          "weights": {
+            "social": 2,
+            "humor": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "text": "画像レスを見たときは？",
+      "answers": [
+        {
+          "id": "a",
+          "text": "ひとこと感想を書く",
+          "weights": {
+            "chat": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "対局の局面が気になる",
+          "weights": {
+            "mahjong": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "キャラの細部まで見る",
+          "weights": {
+            "character": 2
+          }
+        },
+        {
+          "id": "d",
+          "text": "面白い返しを考える",
+          "weights": {
+            "humor": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "text": "好みのスレの雰囲気は？",
+      "answers": [
+        {
+          "id": "a",
+          "text": "まったり日常会話",
+          "weights": {
+            "calm": 2,
+            "chat": 1
+          }
+        },
+        {
+          "id": "b",
+          "text": "戦術の話が濃い",
+          "weights": {
+            "mahjong": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "キャラ愛が強い",
+          "weights": {
+            "character": 2
+          }
+        },
+        {
+          "id": "d",
+          "text": "ネタが飛び交う",
+          "weights": {
+            "humor": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "text": "一緒に過ごすなら？",
+      "answers": [
+        {
+          "id": "a",
+          "text": "話をゆっくり聞いてくれる人",
+          "weights": {
+            "calm": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "勝負ごとに熱い人",
+          "weights": {
+            "mahjong": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "好きなものを語り合える人",
+          "weights": {
+            "character": 1,
+            "chat": 1
+          }
+        },
+        {
+          "id": "d",
+          "text": "場を盛り上げてくれる人",
+          "weights": {
+            "social": 1,
+            "humor": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "text": "好きな褒め言葉は？",
+      "answers": [
+        {
+          "id": "a",
+          "text": "話しやすい",
+          "weights": {
+            "chat": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "打ち筋が鋭い",
+          "weights": {
+            "mahjong": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "推しへの愛がある",
+          "weights": {
+            "character": 2
+          }
+        },
+        {
+          "id": "d",
+          "text": "一緒にいると楽しい",
+          "weights": {
+            "social": 2,
+            "humor": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "text": "最後に、何を一番大切にしたい？",
+      "answers": [
+        {
+          "id": "a",
+          "text": "気楽に過ごせること",
+          "weights": {
+            "calm": 2
+          }
+        },
+        {
+          "id": "b",
+          "text": "少しずつ強くなること",
+          "weights": {
+            "mahjong": 2
+          }
+        },
+        {
+          "id": "c",
+          "text": "好きなキャラを愛でること",
+          "weights": {
+            "character": 2
+          }
+        },
+        {
+          "id": "d",
+          "text": "みんなと楽しむこと",
+          "weights": {
+            "social": 2
+          }
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "status": "design-proposal",
+    "verified": false,
+    "source": [
+      "docs/diagnosis-spec.md"
+    ],
+    "confidence": "low"
+  }
+}

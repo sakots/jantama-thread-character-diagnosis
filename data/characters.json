@@ -1,0 +1,51 @@
+{
+  "status": "incomplete-requires-source-review",
+  "note": "Not an official roster. Do not compute diagnosis scores until validated character trait vectors exist.",
+  "traitSchema": {
+    "chat": "0..5",
+    "mahjong": "0..5",
+    "character": "0..5",
+    "social": "0..5",
+    "humor": "0..5",
+    "calm": "0..5"
+  },
+  "characters": [
+    {
+      "id": "ichihime",
+      "name": "一姫",
+      "universe": "mahjong-soul",
+      "sourceStatus": "known-name-only",
+      "officialProfile": null,
+      "threadInterpretation": null,
+      "traits": null,
+      "eligibleForDiagnosis": false,
+      "evidence": {
+        "status": "prior-analysis-summary",
+        "verified": false,
+        "source": [
+          "docs/character-profiles.md"
+        ],
+        "confidence": "low"
+      }
+    }
+  ],
+  "threadMemeCharacters": [
+    {
+      "id": "koito-fukumaru",
+      "name": "福丸小糸",
+      "universe": "other-franchise-thread-meme",
+      "face": "꒰( ˶ ᷇ 𖥦 ᷆ ˵ )꒰",
+      "style": "丁寧形・ですっ…！・ますっ…！。顔文字と台詞の間に改行を入れない",
+      "eligibleForDiagnosis": false,
+      "sourceStatus": "user-confirmed-thread-meme",
+      "evidence": {
+        "status": "user-confirmed",
+        "verified": true,
+        "source": [
+          "docs/thread-culture.md"
+        ],
+        "confidence": "high"
+      }
+    }
+  ]
+}
