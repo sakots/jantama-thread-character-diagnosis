@@ -1,13 +1,14 @@
 {
   "name": "jantama-thread-character-diagnosis",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 0.0.0.0",
     "test": "vitest run",
+    "test:deploy": "pnpm build && node tests/static-deployment.mjs",
     "test:watch": "vitest"
   },
   "dependencies": {
