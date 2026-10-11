@@ -16,7 +16,18 @@
       "universe": "mahjong-soul",
       "sourceStatus": "known-name-only",
       "officialProfile": null,
-      "threadInterpretation": null,
+      "threadInterpretation": {
+        "text": "キャラの話題では「かずき」の呼び名が使われる。公式の性格や好感度とは区別する。",
+        "evidence": {
+          "status": "corpus-verified",
+          "verified": true,
+          "source": [
+            "docs/character-profiles.md",
+            "docs/corpus-report.md"
+          ],
+          "confidence": "medium"
+        }
+      },
       "traits": null,
       "eligibleForDiagnosis": false,
       "evidence": {

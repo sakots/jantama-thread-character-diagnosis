@@ -66,7 +66,7 @@
 
 - `data/questions.json`: 8〜12問。質問・回答のIDは各スコープで一意。属性は上記6種類に限定し、回答配点は0〜2。全体に `evidence` を付け、すべて診断用仮説であることを示す。
 - `data/characters.json`: 公式紹介は `officialProfile`、スレでの扱いは `threadInterpretation`、診断重みは `traits` に分離。未確認は `null` のまま。各非null項目に `evidence` を持たせる。
-- `evidence`: `status`（user-confirmed / prior-analysis-summary / design-proposal / unverified）、`verified`、`source`、`confidence`（high / medium / low）。`verified` はその項目の事実確認を示す。別の `traits.reviewed` は診断用設計値の人手レビューを示し、事実確認とは混同しない。
+- `evidence`: `status`（user-confirmed / prior-analysis-summary / corpus-verified / design-proposal / unverified）、`verified`、`source`、`confidence`（high / medium / low）。`verified` はその項目の事実確認を示す。別の `traits.reviewed` は診断用設計値の人手レビューを示し、事実確認とは混同しない。
 - `traits`: `{ weights: { 全6属性: 0〜5 }, reviewed: boolean, evidence }`。対象は `universe: mahjong-soul`、`eligibleForDiagnosis: true`、`reviewed: true`、非ゼロベクトルで、非nullの公式紹介とその確認済み出典が必要。スレ内の扱いだけから公式性格を作らない。
 - `threadMemeCharacters` は参考情報で、推薦候補に混ぜない。福丸小糸のゲーム内での登場状況は未確認で、既存の区分はスレ資料の整理用として扱う。
 - `data/presentation.json`: 属性の表示名、結果の一言、説明文を管理。一言は創作文で、実投稿や公式台詞として扱わない。
@@ -75,6 +75,6 @@
 
 ## TODOと検証範囲
 
-- TODO: 対象雀士と公式出典を確認し、属性重みを人手レビューする。今回は外部情報の追加や原ログ再解析は行わない。
+- TODO: 対象雀士と公式出典を確認し、属性重みを人手レビューする。ログ再解析は `docs/corpus-analysis.md` の方法で進め、公式性格や配点の根拠とは混同しない。
 - 自動テストで再現性、丸め前順位、同点、正規化、回答変更、未完了、未知キー、重複ID、数値範囲、欠損、未レビュー、全候補非表示、ゼロベクトルを検証する。
 - UIテストで10問の完了、戻る・回答変更、再診断、準備中の説明を検証する。モバイル・キーボード操作と本番ビルドも確認する。

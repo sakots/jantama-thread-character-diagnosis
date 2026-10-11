@@ -5,3 +5,4 @@ dist/
 !.env.example
 corpus/
 raw-logs/
+__pycache__/

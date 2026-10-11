@@ -6,7 +6,7 @@ export type Vector = Record<Dimension, number>;
 
 const text = z.string().trim().min(1);
 const evidenceSchema = z.object({
-  status: z.enum(['user-confirmed', 'prior-analysis-summary', 'design-proposal', 'unverified']),
+  status: z.enum(['user-confirmed', 'prior-analysis-summary', 'corpus-verified', 'design-proposal', 'unverified']),
   verified: z.boolean(),
   source: z.array(text).min(1),
   confidence: z.enum(['high', 'medium', 'low']),

@@ -27,6 +27,18 @@ function candidate(id: string, weights = vector): Character {
 }
 
 describe('データ契約', () => {
+  it('原ログ照合済みのスレ内扱いを受理し、公式設定と分離する', () => {
+    const data = structuredClone(rawCharacters);
+    Object.assign(data.characters[0], {
+      threadInterpretation: {
+        text: 'スレ内の愛称を原ログで確認したテストデータ',
+        evidence: { status: 'corpus-verified', verified: true, source: ['docs/corpus-report.md'], confidence: 'medium' },
+      },
+    });
+    expect(characterDataSchema.safeParse(data).success).toBe(true);
+    expect(data.characters[0].officialProfile).toBeNull();
+  });
+
   it('既存JSONを受理し、公開キャラの未確認属性をnullに保つ', () => {
     expect(questionDataSchema.parse(rawQuestions).questions).toHaveLength(10);
     expect(characterDataSchema.parse(rawCharacters).characters[0].traits).toBeNull();

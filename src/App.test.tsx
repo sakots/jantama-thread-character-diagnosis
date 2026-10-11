@@ -41,7 +41,7 @@ describe('診断の画面', () => {
   it('出典説明で仮説と過去の分析要約を区別する', async () => {
     render(<App />);
     await userEvent.click(screen.getByText('出典と診断のしくみ'));
-    expect(screen.getByText(/原ログを再照合していない過去の分析要約/)).toBeVisible();
+    expect(screen.getByText(/197スレ.*178,997件/)).toBeVisible();
     expect(screen.getByText(/質問・配点・6つの属性は、このアプリのための仮説/)).toBeVisible();
   });
 

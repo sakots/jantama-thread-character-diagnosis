@@ -18,7 +18,7 @@ function Sources({ content }: { content: Content }) {
           </section>
         ))}
       </div>
-      <p className="source-reference">参照資料：research-status.md / thread-culture.md / character-profiles.md / diagnosis-spec.md</p>
+      <p className="source-reference">参照資料：research-status.md / thread-culture.md / character-profiles.md / diagnosis-spec.md / corpus-analysis.md / corpus-report.md</p>
     </details>
   );
 }

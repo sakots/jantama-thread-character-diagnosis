@@ -1,7 +1,7 @@
 {
   "name": "jantama-thread-character-diagnosis",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
@@ -9,7 +9,9 @@
     "preview": "vite preview --host 0.0.0.0",
     "test": "vitest run",
     "test:deploy": "pnpm build && node tests/static-deployment.mjs",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "analyze:corpus": "python3 scripts/analyze_corpus.py",
+    "test:corpus": "python3 -m unittest discover -s tests -p 'test_*.py'"
   },
   "dependencies": {
     "react": "^19.2.0",
